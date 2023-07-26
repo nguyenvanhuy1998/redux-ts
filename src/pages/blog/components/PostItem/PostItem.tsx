@@ -1,4 +1,4 @@
-import { deletePost, startEditingPost } from 'pages/blog/blog.reducer'
+import { deletePost, startEditingPost } from 'pages/blog/blog.slice'
 import { useDispatch } from 'react-redux'
 import { Post } from 'types/blog.type'
 
