@@ -1,5 +1,5 @@
 import { deletePost, startEditingPost } from 'pages/blog/blog.slice'
-import { useDispatch } from 'react-redux'
+import { useAppDispatch } from 'store'
 import { Post } from 'types/blog.type'
 
 interface PostItemType {
@@ -7,7 +7,7 @@ interface PostItemType {
 }
 
 export default function PostItem({ post }: PostItemType) {
-  const dispatch = useDispatch()
+  const dispatch = useAppDispatch()
   const handleDelete = () => {
     dispatch(deletePost(post.id))
   }
